@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 *,
 *::before,
@@ -9,9 +10,10 @@
 }
 
 body,
-input {
-  font-family: "Poppins", sans-serif;
+input{
+  font-family: 'Source Sans Pro', sans-serif;
 }
+
 
 main {
   width: 100%;
@@ -22,6 +24,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+h4{
+  font-family: 'Playfair Display', serif;
 }
 
 .box {
@@ -97,14 +103,14 @@ form.sign-up-form {
 }
 
 .heading h6 {
-  color: #bababa;
+  color: #767a73;
   font-weight: 400;
   font-size: 0.75rem;
   display: inline;
 }
 
 .toggle {
-  color: #151111;
+  color: #0b22eb;
   text-decoration: none;
   font-size: 0.75rem;
   font-weight: 500;
@@ -122,28 +128,30 @@ form.sign-up-form {
 }
 
 .input-field {
+  border: none;
+  border-bottom: 1px solid #bbb;
+  padding: 0;
   position: absolute;
   width: 100%;
   height: 100%;
   background: none;
-  border: none;
   outline: none;
-  border-bottom: 1px solid #bbb;
-  padding: 0;
   font-size: 0.95rem;
   color: #151111;
   transition: 0.4s;
+
 }
 
 label {
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%);
   font-size: 0.95rem;
-  color: #bbb;
+  color: #a3a5a3;
   pointer-events: none;
+  transform: translateY(-50%);
   transition: 0.4s;
+
 }
 
 .input-field.active {
@@ -174,12 +182,12 @@ label {
 }
 
 .text {
-  color: #bbb;
+  color: #767a73;
   font-size: 0.7rem;
 }
 
 .text a {
-  color: #bbb;
+  color: #0f2dd1;
   transition: 0.3s;
 }
 
@@ -206,16 +214,16 @@ main.sign-up-mode .carousel {
 }
 
 .carousel {
+  border-radius: 2rem;
+  padding-bottom: 2rem;
   position: absolute;
   height: 100%;
   width: 55%;
   left: 45%;
   top: 0;
   background-color: #ffe0d2;
-  border-radius: 2rem;
   display: grid;
   grid-template-rows: auto 1fr;
-  padding-bottom: 2rem;
   overflow: hidden;
   transition: 0.8s ease-in-out;
 }
@@ -285,12 +293,12 @@ main.sign-up-mode .carousel {
 }
 
 .bullets span {
+  margin: 0 0.25rem;
   display: block;
   width: 0.5rem;
   height: 0.5rem;
-  background-color: #aaa;
-  margin: 0 0.25rem;
   border-radius: 50%;
+  background-color: #aaa;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -322,6 +330,26 @@ main.sign-up-mode .carousel {
     height: auto;
   }
 
+  .carousel{
+    position: revert;
+    height: auto;
+    width: 100%;
+    
+  }
+
+  .images-wrapper{
+    display: none;
+  }
+
+  .text-wrap{
+    margin-top: 1rem;
+  }
+
+  .text slider{
+    width: 100%;
+  }
+
+ 
   form {
     max-width: revert;
     padding: 1.5rem 2.5rem 2rem;
@@ -343,3 +371,36 @@ main.sign-up-mode .carousel {
   main.sign-up-mode form.sign-up-form {
     transform: translateX(0%);
   }
+}
+
+@media (max-width:530px) {
+
+  main{
+    padding:1rem;
+  }
+
+  .box{
+    border-radius: 2rem;
+  }
+  
+  .inner-box{
+    padding: 1rem;
+  }
+
+  .carousel{
+    padding: 1.5rem 1rem;
+    border-radius: 1.6rem;
+  }
+
+  .text-wrap{
+    margin-bottom: 1rem;
+  }
+
+  .text-group h2{
+    font-size: 1.2rem;
+  }
+
+  form{
+    padding: 1rem 2rem 1.5rem;
+  }
+}
