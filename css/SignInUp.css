@@ -19,7 +19,8 @@ main {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background-color: #ff8c6b;
+  /*background-color: #ff8c6b;*/
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -36,7 +37,7 @@ h4{
   width: 100%;
   max-width: 1020px;
   height: 640px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 3.3rem;
   box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
 }
@@ -86,12 +87,13 @@ form.sign-up-form {
 }
 
 .logo img {
-  width: 27px;
+  width: 3rem;
   margin-right: 0.3rem;
+  border-radius: 18rem;
 }
 
 .logo h4 {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   margin-top: -9px;
   letter-spacing: -0.5px;
   color: #151111;
@@ -104,7 +106,7 @@ form.sign-up-form {
 }
 
 .heading h6 {
-  color: #767a73;
+  color: #494d49;
   font-weight: 400;
   font-size: 0.75rem;
   display: inline;
@@ -148,7 +150,7 @@ label {
   left: 0;
   top: 50%;
   font-size: 0.95rem;
-  color: #a3a5a3;
+  color: #494d49;
   pointer-events: none;
   transform: translateY(-50%);
   transition: 0.4s;
@@ -172,14 +174,18 @@ label {
   color: #fff;
   border: none;
   cursor: pointer;
-  border-radius: 0.8rem;
+  border-radius: 2rem;
   font-size: 0.8rem;
   margin-bottom: 2rem;
   transition: 0.3s;
+ 
 }
 
 .sign-btn:hover {
-  background-color: #8371fd;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 60%);
+  color:black ;
+  font-weight: bold;
+  font-size: .9rem;
 }
 
 .text {
@@ -222,7 +228,8 @@ main.sign-up-mode .carousel {
   width: 55%;
   left: 45%;
   top: 0;
-  background-color: #ffe0d2;
+  /*background-color: #ffe0d2;*/
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   display: grid;
   grid-template-rows: auto 1fr;
   overflow: hidden;
@@ -238,7 +245,7 @@ main.sign-up-mode .carousel {
 }
 
 .image {
-  width: 80%;
+  width: 91%;
   grid-column: 1/2;
   grid-row: 1/2;
   opacity: 0;
@@ -273,7 +280,7 @@ main.sign-up-mode .carousel {
 .text-wrap {
   max-height: 2.2rem;
   overflow: hidden;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .text-group {
@@ -302,7 +309,7 @@ main.sign-up-mode .carousel {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: #aaa;
+  background-color:#29412cc9;
   cursor: pointer;
   transition: 0.3s;
 }
