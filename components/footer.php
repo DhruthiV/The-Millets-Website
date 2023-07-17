@@ -1,41 +1,62 @@
-<footer class="footer">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-   <section class="grid">
+    
 
-      <div class="box">
-         <h3>quick links</h3>
-         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
-         <a href="about.php"> <i class="fas fa-angle-right"></i> about</a>
-         <a href="shop.php"> <i class="fas fa-angle-right"></i> shop</a>
-         <a href="contact.php"> <i class="fas fa-angle-right"></i> contact</a>
+</head>
+<body>
+<footer class="foot">
+    <div class="cont">
+    
+      <div class="link-boxes">
+        <ul class="f-box">
+          <li class="link_name">Information</li>
+          <li><a href="../home.php">Home</a></li>
+          <li><a href="../contact.php">Contact us</a></li>
+          <li><a href="../about.php">About us</a></li>
+          <li><a href="../home.php">shop</a></li>
+        </ul>
+        <ul class="f-box">
+          <li class="link_name">Services</li>
+          <li><a href="../cart.php">Cart</a></li>
+          <li><a href="../orders.php">Orders</a></li>
+          <li><a href="#">Gifts & Offer</a></li>
+          <li><a href="#">Payment</a></li>
+
+        </ul>
+        <ul class="f-box">
+          <li class="link_name">Account</li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Log in </a></li>
+          <li><a href="#">Log out</a></li></ul>
+        <ul class="f-box">
+            <li class="link_name">Follow us</li>
+            <li> <a href="#"><i class="fab fa-facebook-f"></i>  facebook</a></li>
+           <li><a href="#"><i class="fab fa-twitter"></i>   twitter</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i>   instagram</a></li>
+           <li> <a href="#"><i class="fab fa-linkedin"></i>  linkedin</a></li>
+        </ul>
+        <ul class="f-box input-box">
+          <li class="link_name">Contact us</li>
+          <li class="mob">080-655-244</li>
+        </ul>
       </div>
-
-      <div class="box">
-         <h3>extra links</h3>
-         <a href="user_login.php"> <i class="fas fa-angle-right"></i> login</a>
-         <a href="user_register.php"> <i class="fas fa-angle-right"></i> register</a>
-         <a href="cart.php"> <i class="fas fa-angle-right"></i> cart</a>
-         <a href="orders.php"> <i class="fas fa-angle-right"></i> orders</a>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2023 <a href="#">Siri Flavors</a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
       </div>
-
-      <div class="box">
-         <h3>contact us</h3>
-         <a href="tel:1234567890"><i class="fas fa-phone"></i> +123 456 7899</a>
-         <a href="tel:11122233333"><i class="fas fa-phone"></i> +111 222 3333</a>
-         <a href="mailto:shaikh@gmail.com"><i class="fas fa-envelope"></i> shaikh@gmail.com</a>
-         <a href="https://www.google.com/myplace"><i class="fas fa-map-marker-alt"></i> mumbai, india - 400104 </a>
-      </div>
-
-      <div class="box">
-         <h3>follow us</h3>
-         <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
-         <a href="#"><i class="fab fa-twitter"></i>twitter</a>
-         <a href="#"><i class="fab fa-instagram"></i>instagram</a>
-         <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
-      </div>
-
-   </section>
-
-   <div class="credit">&copy; copyright @ <?= date('Y'); ?> by <span>mr. web designer</span> | all rights reserved!</div>
-
-</footer>
+    </div>
+  </footer>
+</body>
+</html>

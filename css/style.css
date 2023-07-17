@@ -1059,3 +1059,173 @@ section{
    }
 
 }
+
+/* footer css*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.foot{
+  position: fixed;
+  background:#18948a;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.mob{
+   font-size: large;
+  }
+.foot .cont{
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+
+.foot .cont .link-boxes{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot .cont .link-boxes .f-box{
+  width: calc(100% / 5 - 10px);
+}
+.cont .link-boxes .f-box .link_name{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+}
+.link-boxes .f-box .link_name::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+}
+.cont .link-boxes .f-box li{
+  margin: 6px 0;
+  list-style: none;
+}
+.cont .link-boxes .f-box li a{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease
+}
+.cont .link-boxes .f-box li a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.cont .link-boxes .input-box{
+  margin-right: 55px;
+}
+.link-boxes .input-box input{
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #AFAFB6;
+  background: #1fcaa5;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.link-boxes .input-box input[type="button"]{
+  background: #fff;
+  color:#1fcaa5;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.input-box input[type="button"]:hover{
+  opacity: 1;
+}
+.foot .bottom-details{
+  width: 100%;
+  background: #022421;
+}
+.foot .bottom-details .bottom_text{
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a{
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.bottom-details .bottom_text a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.bottom-details .bottom_text a{
+  margin-right: 10px;
+}
+@media (max-width: 900px) {
+  .foot .cont .link-boxes{
+    flex-wrap: wrap;
+  }
+  .foot .cont .link-boxes .input-box{
+    width: 40%;
+    margin-top: 10px;
+  }
+  .mob{
+   font-size: large;
+  }
+}
+@media (max-width: 700px){
+  .foot{
+    position: relative;
+  }
+  .mob{
+   font-size: large;
+  }
+  .cont .top .logo-details{
+    font-size: 26px;
+  }
+  
+  .foot .cont .link-boxes .f-box{
+    width: calc(100% / 3 - 10px);
+  }
+  .foot .cont .link-boxes .input-box{
+    width: 60%;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a{
+    font-size: 12px;
+  }
+ 
+  
+}
+@media (max-width: 520px){
+  .foot::before{
+    top: 145px;
+  }
+  .foot .cont .top{
+    flex-direction: column;
+  }
+
+  .foot .cont .link-boxes .f-box{
+    width: calc(100% / 2 - 10px);
+  }
+  .foot .cont .link-boxes .input-box{
+    width: 100%;
+  }
+  .mob{
+   font-size: large;
+  }
+}
