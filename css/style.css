@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 :root{
-   --main-color:#2980b9;
-   --orange:#f39c12;
-   --red:#e74c3c;
+   --main-color:#001C30;
+   --teal:#176B87;
+   --turquoise:#64CCC5;
    --black:#333;
    --white:#fff;
    --light-color:#666;
-   --light-bg:#eee;
-   --border:.2rem solid var(--black);
+   --light-bg:#DAFFFB;
+   --border:none;
    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
 
 *{
-   font-family: 'Nunito', sans-serif;
+   font-family: 'Quicksand', sans-serif;
    margin:0; padding:0;
    box-sizing: border-box;
    outline: none; border:none;
@@ -54,6 +54,7 @@ section{
 }
 
 .heading{
+   
    font-size: 4rem;
    color:var(--black);
    margin-bottom: 2rem;
@@ -87,11 +88,11 @@ section{
 }
 
 .option-btn{
-   background-color: var(--orange);
+   background-color: var(--teal);
 }
 
 .delete-btn{
-   background-color: var(--red);
+   background-color: var(--turquoise);
 }
 
 .flex-btn{
@@ -120,7 +121,7 @@ section{
 
 .message i{
    cursor: pointer;
-   color:var(--red);
+   color:var(--turquoise);
    font-size: 2.5rem;
 }
 
@@ -134,7 +135,7 @@ section{
    border: var(--border);
    box-shadow: var(--box-shadow);
    text-align: center;
-   color:var(--red);
+   color:var(--turquoise);
    border-radius: .5rem;
    font-size: 2rem;
    text-transform: capitalize;
@@ -362,7 +363,7 @@ section{
 .home-products .slide .flex .price{
    margin:1rem 0;
    font-size: 2rem;
-   color:var(--red);
+   color:var(--turquoise);
 }
 
 .home-products .slide .fa-heart,
@@ -487,7 +488,7 @@ section{
 
 .quick-view form .row .flex .price{
    font-size: 2rem;
-   color:var(--red);
+   color:var(--turquoise);
 }
 
 .quick-view form .row .content .details{
@@ -582,7 +583,7 @@ section{
 
 .products .box-container .box .flex .price{
    font-size: 2rem;
-   color:var(--red);
+   color:var(--turquoise);
    margin-right: auto;
 }
 
@@ -691,7 +692,7 @@ section{
 .reviews .slide .stars i{
    margin:0 .3rem;
    font-size: 1.7rem;
-   color:var(--orange);
+   color:var(--teal);
 }
 
 .reviews .slide h3{
@@ -782,13 +783,13 @@ section{
 }
 
 .wishlist-total p span{
-   color:var(--red);
+   color:var(--turquoise);
 }
 
 .shopping-cart .fa-edit{
    height: 4.5rem;
    border-radius: .5rem;
-   background-color: var(--orange);
+   background-color: var(--teal);
    width: 5rem;
    font-size: 2rem;
    color:var(--white);
@@ -806,7 +807,7 @@ section{
 }
 
 .shopping-cart .sub-total span{
-   color:var(--red);
+   color:var(--turquoise);
 }
 
 .cart-total{
@@ -827,7 +828,7 @@ section{
 }
 
 .cart-total p span{
-   color:var(--red);
+   color:var(--turquoise);
 }
 
 .display-orders{
@@ -848,7 +849,7 @@ section{
 }
 
 .display-orders p span{
-   color:var(--red);
+   color:var(--turquoise);
 }
 
 .display-orders .grand-total{
@@ -859,7 +860,7 @@ section{
 }
 
 .display-orders .grand-total span{
-   color:var(--red);
+   color:var(--turquoise);
 }
 
 .checkout-orders form{
@@ -1058,4 +1059,75 @@ section{
       width: 100%;
    }
 
+}
+
+
+
+
+
+
+
+header-brandname,header h1{
+   background: aquamarine;
+}
+.header-nav{
+   margin-top: 0.5rem ;
+   padding: 0.3rem;
+   background-color: chocolate;
+   
+}
+.header-user-nav{
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+ margin: 2rem;
+}
+
+.header-user-links a{
+ font-size: 1.3rem;
+ margin-right: 2rem;
+}
+
+.header-span {
+ font-size: 1em;
+ background-color: violet;
+ border: 0em solid blue;
+ border-radius: 3em;
+ padding: 0.2em;
+ position: relative;
+ top: -1rem;
+ left: -0.3rem;
+}
+
+.header-a{
+   color: white;
+   margin: .7rem;
+   text-decoration: none;
+}
+
+i{
+   size: 5rem;
+   color: red;
+}
+
+.header-userprofile{
+ position: absolute;
+  top:120%; right:2rem;
+  background-color: wheat;
+  border-radius: .5rem;
+  box-shadow: 2px;
+  padding:2rem;
+  width: 30rem;
+  padding-top: 1.2rem;
+  display: none;
+  animation:fadeIn .2s linear;
+}
+
+.header-a-userprofilemenu{
+ color: black;
+ text-decoration: none;
+}
+
+header div{
+   text-align: center;
 }
