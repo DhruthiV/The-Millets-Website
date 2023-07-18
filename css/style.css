@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;700&display=swap');
 
 :root{
-   --main-color:#2980b9;
-   --orange:#f39c12;
-   --red:#e74c3c;
+   --main-color:#001C30;
+   --orange:#176B87;
+   --red:#64CCC5;
    --black:#333;
    --white:#fff;
    --light-color:#666;
-   --light-bg:#eee;
-   --border:.2rem solid var(--black);
+   --light-bg:#DAFFFB;
    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
 
 *{
-   font-family: 'Nunito', sans-serif;
+  font-family: 'Open Sans', sans-serif;
    margin:0; padding:0;
    box-sizing: border-box;
    outline: none; border:none;
@@ -233,7 +232,7 @@ section{
 }
 
 .home-bg{
-   background:url(../images/home-bg.png) no-repeat;
+   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
    background-size: cover;
    background-position: center;
 }
@@ -1229,3 +1228,90 @@ section{
    font-size: large;
   }
 }
+
+
+/* home */
+.home-categories{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   justify-items: center;
+}
+
+.home-categories div{
+   margin: 1rem;
+   background-color: teal;
+   padding: 2rem;
+   border-radius: 1rem;
+   text-align: center;
+   font-size: 2rem;
+   
+}
+
+.home-categories img{
+   height: 25rem;
+}
+
+
+/*header*/
+.header-brandname-div{
+   text-align: center;
+  
+}
+.header-brandname h1{
+   background-color: cadetblue;
+   margin-bottom: 2rem;
+   font-size: 5rem;
+   font-family: 'Playfair Display', serif;
+ 
+}
+.header-nav{
+   text-align: center;
+   background-color: yellowgreen;
+   font-size: 2rem;
+   margin-bottom: 2rem;
+
+}
+
+.header-user-links{
+   text-align: center;
+   font-size: 2rem;
+   background-color:burlywood;
+}
+
+.header-userprofile div{
+   position: absolute;
+   top:12%; right:2rem;
+   background-color: white;
+   border-radius: .5rem;
+   box-shadow: var(--box-shadow);
+   border:var(--border);
+   padding:2rem;
+   width: 30rem;
+   padding-top: 1.2rem;
+   display: none;
+   animation:fadeIn .2s linear;
+
+}
+
+.header-userprofile div .active{
+   display: flex;
+}
+
+
+/* global */
+a{
+   color:black;
+}
+.rounded-borders{
+   border-radius: 1rem;
+}
+
+.heading{
+   display: block;
+   margin: 2rem 0 2rem 0;
+   padding: 1rem;
+   background-color: burlywood;
+   width: 100%;
+}
+

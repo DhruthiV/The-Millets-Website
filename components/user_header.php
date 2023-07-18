@@ -11,10 +11,9 @@
    }
 ?>
 
-
 <header class="header">
-    <div class="header-brandname">
-        <a class="header-brandname" href="home.php"> <h1>Siri Flavors</h1></a>
+    <div class="header-brandname-div">
+        <a class="header-brandname" href="home.php"> <h1>SF</h1></a>
     </div>
     <div class="header-nav">
         <nav class="header-nav-links navbar">
@@ -35,7 +34,6 @@
             $count_cart_items->execute([$user_id]);
             $total_cart_counts = $count_cart_items->rowCount();
          ?>
-        
 
 
         <div class="header-user-links">
@@ -59,6 +57,7 @@
                 </a>
     
             </nav>
+        </div>
             <div class="header-userprofile">
                 <?php          
                 $select_profile = $conn->prepare("SELECT * FROM `users` WHERE id = ?");
@@ -75,17 +74,21 @@
                 <?php
                     }else{
                 ?>
+                
+                <div class="active">
                 <p>Did you Sign Up with Us?</p>
                 <a class="header-a-userprofilemenu" href="user_register.php">Sign Up</a>
                 <p>Already have an Account?</p>
                 <a class="header-a-userprofilemenu" href="user_login.php" >Sign In</a>
+
+                </div>
                 
                 <?php
                     }
                 ?>      
                 
             </div>
-        </div>
+       
 
     </div>
    
