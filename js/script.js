@@ -8,12 +8,10 @@ document.querySelector('#menu-btn').onclick = () =>{
 
 document.querySelector('#user-btn').onclick = () =>{
    profile.classList.toggle('active');
-   navbar.classList.remove('active');
 }
 
 window.onscroll = () =>{
-   navbar.classList.remove('active');
-   profile.classList.remove('active');
+    profile.classList.remove('active');
 }
 
 let mainImage = document.querySelector('.quick-view .box .row .image-container .main-image img');

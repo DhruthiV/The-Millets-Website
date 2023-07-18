@@ -64,9 +64,9 @@ section{
 .delete-btn,
 .option-btn{
    display: block;
-   width: 100%;
+   width: 50%;
    margin-top: 1rem;
-   border-radius: .5rem;
+   border-radius: 1rem;
    padding:1rem 3rem;
    font-size: 1.7rem;
    text-transform: capitalize;
@@ -162,7 +162,7 @@ section{
 .header .flex{
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: center;
    position: relative;
 }
 
@@ -1254,13 +1254,15 @@ section{
 
 
 /*header*/
+.header{
+   height: 27vh;
+}
 .header-brandname-div{
    text-align: center;
   
 }
 .header-brandname h1{
    background-color: cadetblue;
-   margin-bottom: 2rem;
    font-size: 5rem;
    font-family: 'Playfair Display', serif;
  
@@ -1279,13 +1281,13 @@ section{
    background-color:burlywood;
 }
 
-.header-userprofile div{
+.header .profile{
    position: absolute;
    top:12%; right:2rem;
    background-color: white;
    border-radius: .5rem;
    box-shadow: var(--box-shadow);
-   border:var(--border);
+ 
    padding:2rem;
    width: 30rem;
    padding-top: 1.2rem;
@@ -1294,14 +1296,16 @@ section{
 
 }
 
-.header-userprofile div .active{
-   display: flex;
+.header .profile .active{
+   display: inline-block;
 }
 
 
 /* global */
 a{
-   color:black;
+   color: black;
+   margin: 0 2rem 0 2rem;
+   padding: 0.2rem;
 }
 .rounded-borders{
    border-radius: 1rem;
@@ -1315,3 +1319,18 @@ a{
    width: 100%;
 }
 
+.btn,
+.delete-btn,
+.option-btn{
+   display: block;
+   width: 50%;
+   margin-top: 1rem;
+   border-radius: 5.5rem;
+   padding: 1rem 3rem;
+   font-size: 1.7rem;
+   text-transform: capitalize;
+   color: var(--white);
+   cursor: pointer;
+   text-align: center;
+   inline-size: fit-content;
+}
