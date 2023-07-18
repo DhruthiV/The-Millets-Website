@@ -200,6 +200,12 @@ section{
 
 .header .flex .icons a span{
    font-size: 2rem;
+   border: 1px solid yellowgreen;
+   border-radius: 5rem;
+   background: yellowgreen;
+   position: relative;
+   top: -1.5rem;
+   padding: 0.2rem;
 }
 
 .header .flex .profile{
@@ -1239,6 +1245,8 @@ section{
 }
 
 .home-categories div{
+   display: flex;
+   justify-content: center;
    margin: 1rem;
    background-color: teal;
    padding: 2rem;
@@ -1298,6 +1306,13 @@ section{
 
 .header .profile .active{
    display: inline-block;
+}
+
+
+/*about*/
+
+.about{
+   margin: 9rem 0 9rem 0;
 }
 
 
