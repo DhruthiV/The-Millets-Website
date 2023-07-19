@@ -52,20 +52,29 @@ section{
    margin:0 auto;
 }
 
+h1{
+   font-family: 'Merriweather', serif;
+}
+
+
 .heading{
    font-size: 4rem;
    color:var(--black);
-   margin-bottom: 2rem;
    text-align: center;
    text-transform: uppercase;
+   display: block;
+   margin: 2rem 0 2rem 0;
+   padding: 1rem;
+   background-color:white;
+   width: 100%;
 }
+
 
 .btn,
 .delete-btn,
 .option-btn{
-   display: block;
-   width: 50%;
-   margin-top: 1rem;
+   display: inline-flex;
+   margin: 0.5rem;
    border-radius: 1rem;
    padding:1rem 3rem;
    font-size: 1.7rem;
@@ -96,6 +105,14 @@ section{
 .flex-btn{
    display: flex;
    gap:1rem;
+   margin-top: 2rem;
+}
+
+.flex-btn div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: column;
 }
 
 .message{
@@ -109,7 +126,7 @@ section{
    align-items: center;
    justify-content: space-between;
    gap:1.5rem;
-   z-index: 1100;
+   z-index: 11;
 }
 
 .message span{
@@ -156,7 +173,7 @@ section{
    top:0; left:0; right:0;
    background-color: var(--white);
    box-shadow: var(--box-shadow);
-   z-index: 1000;
+   z-index: 10;
 }
 
 .header .flex{
@@ -164,6 +181,7 @@ section{
    align-items: center;
    justify-content: center;
    position: relative;
+   margin-top: 3rem;
 }
 
 .header .flex .logo{
@@ -200,37 +218,44 @@ section{
 
 .header .flex .icons a span{
    font-size: 2rem;
-   border: 1px solid yellowgreen;
+   border: 1px solid var(--orange);
    border-radius: 5rem;
-   background: yellowgreen;
+   background:var(--orange);
    position: relative;
    top: -1.5rem;
    padding: 0.2rem;
+   color: white;
 }
 
 .header .flex .profile{
    position: absolute;
    top:120%; right:2rem;
-   background-color: var(--white);
+   background-color:var(--light-bg) ;
    border-radius: .5rem;
    box-shadow: var(--box-shadow);
    border:var(--border);
-   padding:2rem;
-   width: 30rem;
-   padding-top: 1.2rem;
+   padding:3rem;
+   width: fit-content;
    display: none;
    animation:fadeIn .2s linear;
 }
 
 .header .flex .profile.active{
    display: inline-block;
+   height:fit-content;
+}
+
+.header .flex .profile img{
+   height: 28rem;
+    margin: 1rem;
+    border-radius: 2rem;
 }
 
 .header .flex .profile p{
    text-align: center;
    color:var(--black);
-   font-size: 2rem;
-   margin-bottom: 1rem;
+   font-size: 1.5rem;
+  
 }
 
 #menu-btn{
@@ -334,6 +359,9 @@ section{
    margin-bottom: 5rem;
    overflow: hidden;
    user-select: none;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
 }
 
 .home-products .slide img{
@@ -351,8 +379,9 @@ section{
 .home-products .slide .flex{
    display: flex;
    align-items: center;
-   justify-content: space-between;
-   gap:1rem;
+   justify-content: space-around;
+   gap: 10rem;
+
 }
 
 .home-products .slide .flex .qty{
@@ -402,17 +431,25 @@ section{
 }
 
 .home-products .slide:hover .fa-heart{
-   right: 1rem;
+   right: 25%;
+   top: 50%;
+   border-radius: 1rem;
+   border: 1px solid #c5c5c5;
+   color: rgb(185, 0, 0);
 }
 
 .home-products .slide:hover .fa-eye{
-   left: 1rem;
+   left: 25%;
+   top: 50%;
+   border-radius: 1rem;
+   border: 1px solid #c5c5c5;
+   color: rgb(12, 104, 158);
 }
 
 .quick-view form{
    padding:2rem;
    border-radius: .5rem;
-   border:var(--border);
+   border:1px solid rgb(190, 190, 190);
    background-color: var(--white);
    box-shadow: var(--box-shadow);
    margin-top: 1rem;
@@ -471,6 +508,8 @@ section{
 .quick-view form .row .content .name{
    font-size: 2rem;
    color:var(--black);
+   font-family: 'Merriweather', serif;
+   font-weight: 600;
 }
 
 .quick-view form .row .flex{
@@ -484,7 +523,7 @@ section{
 .quick-view form .row .flex .qty{
    width: 7rem;
    padding:1rem;
-   border:var(--border);
+   border:1px solid rgb(190, 190, 190);
    font-size: 1.8rem;
    color:var(--black);
    border-radius: .5rem;
@@ -499,6 +538,11 @@ section{
    font-size: 1.6rem;
    color:var(--light-color);
    line-height: 2;
+   font-size: 1.6rem;
+   color: var(--light-color);
+   line-height: 2;
+   font-family: 'Quicksand', sans-serif;
+   font-weight: 500;
 }  
 
 .products .box-container{
@@ -629,6 +673,7 @@ section{
    align-items: center;
    flex-wrap: wrap;
    gap:1.5rem;
+   padding: 5rem;
 }
 
 .about .row .image{
@@ -704,32 +749,39 @@ section{
    color:var(--black);
 }
 
+.contact-body{
+   background-color: #84fab0;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%238fd3f4' fill-opacity='1'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
 .contact form{
-   padding:2rem;
+   padding: 10rem 7rem;
    text-align: center;
    background-color: var(--white);
    box-shadow: var(--box-shadow);
-   border-radius: .5rem;
-   border:var(--border);
+   border-radius: 1rem;
+   border: var(--border);
    max-width: 50rem;
-   margin:0 auto;
+   margin: 5rem auto;
 }
 
+
 .contact form h3{
-   margin-bottom: 1rem;
+   margin: 2rem 1rem;
    text-transform: capitalize;
    font-size: 2.5rem;
    color:var(--black);
 }
 
 .contact form .box{
-   margin:1rem 0;
+   margin: 1rem 0;
    width: 100%;
-   background-color: var(--light-bg);
-   padding:1.4rem;
+   background-color: transparent;
+   padding: 1.4rem;
    font-size: 1.8rem;
-   color:var(--black);
-   border-radius: .5rem;
+   color: var(--black);
+   border-radius: 1rem;
+   border: 0.1px solid #E0E0E0;
 }
 
 .contact form textarea{
@@ -1248,11 +1300,12 @@ section{
    display: flex;
    justify-content: center;
    margin: 1rem;
-   background-color: teal;
+   background-color: var(--white);
    padding: 2rem;
    border-radius: 1rem;
    text-align: center;
    font-size: 2rem;
+   box-shadow: var(--box-shadow);
    
 }
 
@@ -1263,21 +1316,22 @@ section{
 
 /*header*/
 .header{
-   height: 27vh;
+   height: 30vh;
 }
 .header-brandname-div{
    text-align: center;
   
 }
 .header-brandname h1{
-   background-color: cadetblue;
+   background-color: var(--light-bg);
    font-size: 5rem;
    font-family: 'Playfair Display', serif;
+   width: 100%;
  
 }
 .header-nav{
    text-align: center;
-   background-color: yellowgreen;
+   background-color: var(--red);
    font-size: 2rem;
    margin-bottom: 2rem;
 
@@ -1295,7 +1349,6 @@ section{
    background-color: white;
    border-radius: .5rem;
    box-shadow: var(--box-shadow);
- 
    padding:2rem;
    width: 30rem;
    padding-top: 1.2rem;
@@ -1308,11 +1361,22 @@ section{
    display: inline-block;
 }
 
+.option-btn .sign{
+   display: flex;
+   margin: 2rem;
+}
+
+
 
 /*about*/
+.about-body{
+   background-color: #84fab0;
+background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%238fd3f4' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
+}
 
 .about{
-   margin: 9rem 0 9rem 0;
+   margin: 10rem ;
+   background-color: var(--white);
 }
 
 
@@ -1321,31 +1385,13 @@ a{
    color: black;
    margin: 0 2rem 0 2rem;
    padding: 0.2rem;
+   
 }
 .rounded-borders{
    border-radius: 1rem;
 }
 
-.heading{
-   display: block;
-   margin: 2rem 0 2rem 0;
-   padding: 1rem;
-   background-color: burlywood;
-   width: 100%;
-}
-
-.btn,
-.delete-btn,
-.option-btn{
-   display: block;
-   width: 50%;
-   margin-top: 1rem;
-   border-radius: 5.5rem;
-   padding: 1rem 3rem;
-   font-size: 1.7rem;
-   text-transform: capitalize;
-   color: var(--white);
-   cursor: pointer;
-   text-align: center;
-   inline-size: fit-content;
+.quickview-body{
+   background-color: #84fab0;
+background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657 8.787 5.07 13.857 0H11.03zm32.284 0L49.8 6.485 48.384 7.9l-7.9-7.9h2.83zM16.686 0L10.2 6.485 11.616 7.9l7.9-7.9h-2.83zm20.97 0l9.315 9.314-1.414 1.414L34.828 0h2.83zM22.344 0L13.03 9.314l1.414 1.414L25.172 0h-2.83zM32 0l12.142 12.142-1.414 1.414L30 .828 17.272 13.556l-1.414-1.414L28 0h4zM.284 0l28 28-1.414 1.414L0 2.544V0h.284zM0 5.373l25.456 25.455-1.414 1.415L0 8.2V5.374zm0 5.656l22.627 22.627-1.414 1.414L0 13.86v-2.83zm0 5.656l19.8 19.8-1.415 1.413L0 19.514v-2.83zm0 5.657l16.97 16.97-1.414 1.415L0 25.172v-2.83zM0 28l14.142 14.142-1.414 1.414L0 30.828V28zm0 5.657L11.314 44.97 9.9 46.386l-9.9-9.9v-2.828zm0 5.657L8.485 47.8 7.07 49.212 0 42.143v-2.83zm0 5.657l5.657 5.657-1.414 1.415L0 47.8v-2.83zm0 5.657l2.828 2.83-1.414 1.413L0 53.456v-2.83zM54.627 60L30 35.373 5.373 60H8.2L30 38.2 51.8 60h2.827zm-5.656 0L30 41.03 11.03 60h2.828L30 43.858 46.142 60h2.83zm-5.656 0L30 46.686 16.686 60h2.83L30 49.515 40.485 60h2.83zm-5.657 0L30 52.343 22.343 60h2.83L30 55.172 34.828 60h2.83zM32 60l-2-2-2 2h4zM59.716 0l-28 28 1.414 1.414L60 2.544V0h-.284zM60 5.373L34.544 30.828l1.414 1.415L60 8.2V5.374zm0 5.656L37.373 33.656l1.414 1.414L60 13.86v-2.83zm0 5.656l-19.8 19.8 1.415 1.413L60 19.514v-2.83zm0 5.657l-16.97 16.97 1.414 1.415L60 25.172v-2.83zM60 28L45.858 42.142l1.414 1.414L60 30.828V28zm0 5.657L48.686 44.97l1.415 1.415 9.9-9.9v-2.828zm0 5.657L51.515 47.8l1.414 1.413 7.07-7.07v-2.83zm0 5.657l-5.657 5.657 1.414 1.415L60 47.8v-2.83zm0 5.657l-2.828 2.83 1.414 1.413L60 53.456v-2.83zM39.9 16.385l1.414-1.414L30 3.658 18.686 14.97l1.415 1.415 9.9-9.9 9.9 9.9zm-2.83 2.828l1.415-1.414L30 9.313 21.515 17.8l1.414 1.413 7.07-7.07 7.07 7.07zm-2.827 2.83l1.414-1.416L30 14.97l-5.657 5.657 1.414 1.415L30 17.8l4.243 4.242zm-2.83 2.827l1.415-1.414L30 20.626l-2.828 2.83 1.414 1.414L30 23.456l1.414 1.414zM56.87 59.414L58.284 58 30 29.716 1.716 58l1.414 1.414L30 32.544l26.87 26.87z' fill='%238fd3f4' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
