@@ -14,7 +14,7 @@
 <header class="header">
     
     <div class="header-brandname-div">
-            <a class="header-brandname" href="home.php"> <h1>SF</h1></a>
+            <a class="header-brandname" href="home.php"> <h1>Siri Flavors</h1></a>
     </div>
     <div class="header-nav">
         <nav class="header-nav-links navbar">
@@ -61,10 +61,12 @@
          ?>
         <div class="flex-btn">
          <div>
+            <img src="images\sweet.jpg" alt="">
             <p>Did you Sign Up with Us?</p>
-            <a href="user_register.php" class="option-btn">Sign Up</a>
+            <a href="user_register.php" class="option-btn sign">Sign Up</a>
             <p>Already have an Account?</p>
-            <a  href="user_login.php" class="option-btn">Sign In</a>
+            <a  href="user_login.php" class="option-btn sign">Sign In</a>
+            
 
         </div>
         </div>
