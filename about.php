@@ -42,8 +42,18 @@ if(isset($_SESSION['user_id'])){
       </div>
 
       <div class="content">
-         <h3>why choose us?</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis minus et similique doloribus? Harum molestias tenetur eaque illum quas? Obcaecati nulla in itaque modi magnam ipsa molestiae ullam consequuntur.</p>
+         <h3>About Siri Flavors</h3>
+         <p>           
+                Siri Flavors is a pioneering millets company based in Bengaluru, founded in 2023 by Dhruthi Venkatesh, Chithrashree Nagaraj, and Chaithra Gangadhar. Our mission is to bring the rich tradition of millets to your doorstep. We source the finest millets from farmers across India and offer an extensive range of millet products, including raw millets, sweets, snacks, instant recipes, and celebration combos.
+                <br>
+                
+                At Siri Flavors, we are passionate about the power of millets to nourish and sustain. These ancient grains are packed with essential nutrients and are an excellent source of fiber, protein, and vitamins. Our products are carefully crafted to showcase the unique flavors and textures of millets.
+                <br>
+                We are deeply committed to supporting local farmers and promoting sustainable agriculture. By choosing Siri Flavors, you are not only nourishing yourself and your loved ones but also making a positive impact on the livelihoods of farmers across India.
+                <br>
+                Join us on our journey to rediscover the goodness of millets. Thank you for choosing Siri Flavors. We hope our products bring joy and nourishment to your life.
+               
+                </p>
          <a href="contact.php" class="btn">contact us</a>
       </div>
 
@@ -51,100 +61,8 @@ if(isset($_SESSION['user_id'])){
 
 </section>
 
-<section class="reviews">
-   
-   <h1 class="heading">client's reviews</h1>
 
-   <div class="swiper reviews-slider">
-
-   <div class="swiper-wrapper">
-
-      <div class="swiper-slide slide">
-         <img src="images/pic-1.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
-         <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-         </div>
-         <h3>john deo</h3>
-      </div>
-
-      <div class="swiper-slide slide">
-         <img src="images/pic-2.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
-         <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-         </div>
-         <h3>john deo</h3>
-      </div>
-
-      <div class="swiper-slide slide">
-         <img src="images/pic-3.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
-         <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-         </div>
-         <h3>john deo</h3>
-      </div>
-
-      <div class="swiper-slide slide">
-         <img src="images/pic-4.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
-         <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-         </div>
-         <h3>john deo</h3>
-      </div>
-
-      <div class="swiper-slide slide">
-         <img src="images/pic-5.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
-         <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-         </div>
-         <h3>john deo</h3>
-      </div>
-
-      <div class="swiper-slide slide">
-         <img src="images/pic-6.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
-         <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-         </div>
-         <h3>john deo</h3>
-      </div>
-
-   </div>
-
-   <div class="swiper-pagination"></div>
-
-   </div>
-
-</section>
-
+  
 
 
 

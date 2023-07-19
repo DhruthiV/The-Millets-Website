@@ -32,10 +32,10 @@ include 'components/wishlist_cart.php';
 <body>
    
 <?php include 'components/user_header.php'; ?>
+<h1 class="heading">latest products</h1>
 
 <section class="products">
 
-   <h1 class="heading">latest products</h1>
 
    <div class="box-container">
 

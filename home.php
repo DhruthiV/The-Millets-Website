@@ -45,33 +45,34 @@ include 'components/wishlist_cart.php';
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/home-img-1.png" alt="">
+            <img src="images/home-img-1.png"  alt="" class="rounded-borders">
          </div>
          <div class="content">
-            <span>upto 50% off</span>
-            <h3>latest smartphones</h3>
+            <span>upto 30% off</span>
+            <h3>Buy our Instant Recipes</h3>
+           <h4>5 mins Breakfast Recipes </h4>
             <a href="shop.php" class="btn">shop now</a>
          </div>
       </div>
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/home-img-2.png" alt="">
+            <img src="images/home-img-2.png"  alt="" class="rounded-borders">
          </div>
          <div class="content">
-            <span>upto 50% off</span>
-            <h3>latest watches</h3>
+            <span>healthy Sweets and snacks</span>
+            <h3>Taste our sweets and snacks</h3>
             <a href="shop.php" class="btn">shop now</a>
          </div>
       </div>
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/home-img-3.png" alt="">
+            <img src="images/home-img-3.png"  alt="" class="rounded-borders">
          </div>
          <div class="content">
-            <span>upto 50% off</span>
-            <h3>latest headsets</h3>
+            <span>Get upto 50% off on combos</span>
+            <h3>Get breakfast, lunch and dinner combos</h3>
             <a href="shop.php" class="btn">shop now</a>
          </div>
       </div>
@@ -86,65 +87,47 @@ include 'components/wishlist_cart.php';
 
 </div>
 
+<h1 class="heading">Shop By category</h1>
+
 <section class="category">
 
-   <h1 class="heading">shop by category</h1>
+   <div class="home-categories">
 
-   <div class="swiper category-slider">
+   <div> <a href="category.php?category=raw" >
+      <img src="images/raw.jpg"  alt="" class="rounded-borders">
+      <h3>Raw Millets</h3>
+   </a></div> 
 
-   <div class="swiper-wrapper">
+   <div> <a href="category.php?category=instant"  >
+      <img src="images/instant.jpg"   alt="" class="rounded-borders" >
+      <h3>Instant recipes</h3>
+   </a></div> 
 
-   <a href="category.php?category=laptop" class="swiper-slide slide">
-      <img src="images/icon-1.png" alt="">
-      <h3>laptop</h3>
-   </a>
+   <div> <a href="category.php?category=sweet"  >
+      <img src="images/sweet.jpg"  alt="" class="rounded-borders">
+      <h3>Sweets</h3>
+   </a></div> 
 
-   <a href="category.php?category=tv" class="swiper-slide slide">
-      <img src="images/icon-2.png" alt="">
-      <h3>tv</h3>
-   </a>
+   <div> <a href="category.php?category=snacks"  >
+      <img src="images/snack.jpg"  alt="" class="rounded-borders">
+      <h3>Snacks</h3>
+   </a></div> 
 
-   <a href="category.php?category=camera" class="swiper-slide slide">
-      <img src="images/icon-3.png" alt="">
-      <h3>camera</h3>
-   </a>
+   <div> <a href="category.php?category=combos"  >
+      <img src="images/raw.jpg"  alt="" class="rounded-borders">
+      <h3>Combo Packs</h3>
+   </a></div> 
 
-   <a href="category.php?category=mouse" class="swiper-slide slide">
-      <img src="images/icon-4.png" alt="">
-      <h3>mouse</h3>
-   </a>
-
-   <a href="category.php?category=fridge" class="swiper-slide slide">
-      <img src="images/icon-5.png" alt="">
-      <h3>fridge</h3>
-   </a>
-
-   <a href="category.php?category=washing" class="swiper-slide slide">
-      <img src="images/icon-6.png" alt="">
-      <h3>washing machine</h3>
-   </a>
-
-   <a href="category.php?category=smartphone" class="swiper-slide slide">
-      <img src="images/icon-7.png" alt="">
-      <h3>smartphone</h3>
-   </a>
-
-   <a href="category.php?category=watch" class="swiper-slide slide">
-      <img src="images/icon-8.png" alt="">
-      <h3>watch</h3>
-   </a>
 
    </div>
 
-   <div class="swiper-pagination"></div>
-
-   </div>
+ 
 
 </section>
 
-<section class="home-products">
+<h1 class="heading">latest products</h1>
 
-   <h1 class="heading">latest products</h1>
+<section class="home-products">
 
    <div class="swiper products-slider">
 
@@ -163,7 +146,7 @@ include 'components/wishlist_cart.php';
       <input type="hidden" name="image" value="<?= $fetch_product['image_01']; ?>">
       <button class="fas fa-heart" type="submit" name="add_to_wishlist"></button>
       <a href="quick_view.php?pid=<?= $fetch_product['id']; ?>" class="fas fa-eye"></a>
-      <img src="uploaded_img/<?= $fetch_product['image_01']; ?>" alt="">
+      <img src="uploaded_img/<?= $fetch_product['image_01']; ?>"  alt="" class="rounded-borders">
       <div class="name"><?= $fetch_product['name']; ?></div>
       <div class="flex">
          <div class="price"><span>$</span><?= $fetch_product['price']; ?><span>/-</span></div>
