@@ -13,17 +13,16 @@
 
 <header class="header">
     
-    <div class="header-brandname-div">
-            <a class="header-brandname" href="home.php"> <h1>Siri Flavors</h1></a>
+    
     </div>
     <div class="header-nav">
-        <nav class="header-nav-links navbar">
+        <nav class="navbar">
             <a class="header-a" href="shop.php">Shop</a>
             <a class="header-a" href="about.php">The Brand</a>
             <a class="header-a" href="contact.php">Write to us</a>
                 
         </nav>
-    </div>
+        <a class="header-brandname" href="home.php"> <h1>Siri Flavors</h1>
       <div class="flex">
       <div class="icons">
          <?php
@@ -78,5 +77,5 @@
       </div>
 
         </div>
-
+        </div>
 </header>
