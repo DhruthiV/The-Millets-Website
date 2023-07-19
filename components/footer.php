@@ -1,4 +1,4 @@
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,7 @@
     
 
 </head>
-<body>
-<footer class="foot">
+<footer class="footer">
     <div class="cont">
     
       <div class="link-boxes">
@@ -58,5 +57,3 @@
       </div>
     </div>
   </footer>
-</body>
-</html>
