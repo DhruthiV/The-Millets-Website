@@ -1062,7 +1062,7 @@ section{
 
 /* footer css*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-.foot{
+.footer{
   position: fixed;
   background:#18948a;
   width: 100%;
@@ -1072,19 +1072,19 @@ section{
 .mob{
    font-size: large;
   }
-.foot .cont{
+.footer .cont{
   max-width: 1250px;
   margin: auto;
   padding: 30px 40px 40px 40px;
 }
 
-.foot .cont .link-boxes{
+.footer .cont .link-boxes{
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.foot .cont .link-boxes .f-box{
+.footer .cont .link-boxes .f-box{
   width: calc(100% / 5 - 10px);
 }
 .cont .link-boxes .f-box .link_name{
@@ -1149,11 +1149,11 @@ section{
 .input-box input[type="button"]:hover{
   opacity: 1;
 }
-.foot .bottom-details{
+.footer .bottom-details{
   width: 100%;
   background: #022421;
 }
-.foot .bottom-details .bottom_text{
+.footer .bottom-details .bottom_text{
   max-width: 1250px;
   margin: auto;
   padding: 20px 40px;
@@ -1176,10 +1176,10 @@ section{
   margin-right: 10px;
 }
 @media (max-width: 900px) {
-  .foot .cont .link-boxes{
+  .footer .cont .link-boxes{
     flex-wrap: wrap;
   }
-  .foot .cont .link-boxes .input-box{
+  .footer .cont .link-boxes .input-box{
     width: 40%;
     margin-top: 10px;
   }
@@ -1188,7 +1188,7 @@ section{
   }
 }
 @media (max-width: 700px){
-  .foot{
+  .footer{
     position: relative;
   }
   .mob{
@@ -1198,10 +1198,10 @@ section{
     font-size: 26px;
   }
   
-  .foot .cont .link-boxes .f-box{
+  .footer .cont .link-boxes .f-box{
     width: calc(100% / 3 - 10px);
   }
-  .foot .cont .link-boxes .input-box{
+  .footer .cont .link-boxes .input-box{
     width: 60%;
   }
   .bottom-details .bottom_text span,
@@ -1212,17 +1212,17 @@ section{
   
 }
 @media (max-width: 520px){
-  .foot::before{
+  .footer::before{
     top: 145px;
   }
-  .foot .cont .top{
+  .footer .cont .top{
     flex-direction: column;
   }
 
-  .foot .cont .link-boxes .f-box{
+  .footer .cont .link-boxes .f-box{
     width: calc(100% / 2 - 10px);
   }
-  .foot .cont .link-boxes .input-box{
+  .footer .cont .link-boxes .input-box{
     width: 100%;
   }
   .mob{

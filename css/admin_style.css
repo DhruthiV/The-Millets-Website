@@ -2,18 +2,18 @@
 
 :root{
    --main-color:#0f999e;
-   --orange:#f3d098;
+   --orange:#9E4784;
    --red:#e74c3c;
-   --black:#444;
+   --black:#07708a;
    --white:#fff;
    --light-color:#777;
    --light-bg:#f5f5f5;
-   --border:.2rem solid var(--black);
-   --box-shadow:0 .5rem 1rem rgba(0, 0, 0, 0.1);
+   --border:none;
+   --box-shadow:#111111;
 }
 
 *{
-   font-family: 'Nunito', sans-serif;
+   font-family:'Open Sans', sans-serif;
    margin:0; padding:0;
    box-sizing: border-box;
    outline: none; border:none;
@@ -56,10 +56,11 @@ section{
 
 .heading{
    font-size: 4rem;
-   color:var(--black);
+   color:#6528F7;
    margin-bottom: 2rem;
    text-align: center;
    text-transform: uppercase;
+   font-family: Roboto;
 }
 
 .btn,
@@ -149,33 +150,34 @@ section{
 
 .form-container{
    min-height: 100vh;
-   display: flex;
+   background-color: #dafaf6;
    align-items: center;
    justify-content: center;
 }
 
 .form-container form{
    padding:2rem;
+   align-content: center;
    text-align: center;
    box-shadow: var(--box-shadow);
-   background-color: var(--white);
-   border-radius: .5rem;
+   background-color: #f3fdfbe7;
+   border-radius: .9rem;
    width: 50rem;
    border:var(--border);
 }
 
 .form-container form h3{
    text-transform: uppercase;
-   color:var(--black);
+   color:red;
    margin-bottom: 1rem;
-   font-size: 2.5rem;
+   font-size: 3rem;
 }
 
 .form-container form p{
    font-size: 1.8rem;
    color:var(--light-color);
    margin-bottom: 1rem;
-   border-radius: .5rem;
+   border-radius: .9rem;
 }
 
 .form-container form p span{
@@ -266,6 +268,22 @@ section{
 #menu-btn{
    display: none;
 }
+.dashboard .h1{
+   color: #6528F7;
+}
+.dashboard{
+   background-color: #EDE4FF;
+}
+.dashboard .btn{
+   background-color: #D7BBF5;
+   color: #111111;
+   
+}
+.dashboard .btn:hover{
+   background-color: #A076F9;
+   color: #dafaf6;
+
+}
 
 .dashboard .box-container{
    display: grid;
@@ -284,21 +302,21 @@ section{
    background-color: var(--white);
 }
 
-.dashboard .box-container .box h3{
-   font-size: 2.7rem;
-   color:var(--black);
+.dashboard .box-container .box p{
+   font-size: 2rem;
+   
 }
 
-.dashboard .box-container .box h3 span{
+.dashboard .box-container .box p span{
    font-size: 2rem;
 }
 
-.dashboard .box-container .box p{
+.dashboard .box-container .box h3{
    padding:1.3rem;
+   font-family: Arial;
    border-radius: .5rem;
-   background-color: var(--light-bg);
-   font-size: 1.7rem;
-   color:var(--light-color);
+   font-size: 2.7rem;
+   color:rgb(114, 113, 113);
    margin:1rem 0;
 }
 
@@ -536,24 +554,6 @@ section{
 .contacts .box-container .box p span{
    color:var(--main-color);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width:991px){
 
    html{
