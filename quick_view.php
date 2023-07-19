@@ -29,13 +29,13 @@ include 'components/wishlist_cart.php';
    <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
+<body class="quickview-body">
    
 <?php include 'components/user_header.php'; ?>
 
 <section class="quick-view">
 
-   <h1 class="heading">quick view</h1>
+   <h1 class="heading">Product Box View</h1>
 
    <?php
      $pid = $_GET['pid'];
