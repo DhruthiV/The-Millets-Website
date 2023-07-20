@@ -2,7 +2,7 @@ let navbar = document.querySelector('.header .flex .navbar');
 let profile = document.querySelector('.header .flex .profile');
 
 document.querySelector('#menu-btn').onclick = () =>{
-   navbar.classList.toggle('active');
+   
    profile.classList.remove('active');
 }
 

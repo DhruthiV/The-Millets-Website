@@ -29,7 +29,7 @@ if(isset($_SESSION['user_id'])){
    <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
+<body class="about-body">
    
 <?php include 'components/user_header.php'; ?>
 
@@ -38,7 +38,7 @@ if(isset($_SESSION['user_id'])){
    <div class="row">
 
       <div class="image">
-         <img src="images/about-img.svg" alt="">
+         <img src="images/logo.png" alt="">
       </div>
 
       <div class="content">
