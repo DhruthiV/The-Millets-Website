@@ -21,7 +21,7 @@ if(isset($_POST['order'])){
    $email = filter_var($email, FILTER_SANITIZE_STRING);
    $method = $_POST['method'];
    $method = filter_var($method, FILTER_SANITIZE_STRING);
-   $address = 'flat no. '. $_POST['flat'] .', '. $_POST['street'] .', '. $_POST['city'] .', '. $_POST['state'] .', '. $_POST['country'] .' - '. $_POST['pin_code'];
+   $address = 'flat no. '. $_POST['flat'] .', '. $_POST['street'] .', '. $_POST['city'] .', '. $_POST['state'] .', '. $_POST['landmark'] .' - '. $_POST['pin_code'];
    $address = filter_var($address, FILTER_SANITIZE_STRING);
    $total_products = $_POST['total_products'];
    $total_price = $_POST['total_price'];
@@ -61,7 +61,7 @@ if(isset($_POST['order'])){
    <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
+<body class="checkout-body">
    
 <?php include 'components/user_header.php'; ?>
 
@@ -83,7 +83,7 @@ if(isset($_POST['order'])){
                $total_products = implode($cart_items);
                $grand_total += ($fetch_cart['price'] * $fetch_cart['quantity']);
       ?>
-         <p> <?= $fetch_cart['name']; ?> <span>(<?= '$'.$fetch_cart['price'].'/- x '. $fetch_cart['quantity']; ?>)</span> </p>
+         <p> <?= $fetch_cart['name']; ?> <span>(<?= 'Rs.'.$fetch_cart['price'].'x'. $fetch_cart['quantity']; ?>)</span> </p>
       <?php
             }
          }else{
@@ -92,23 +92,23 @@ if(isset($_POST['order'])){
       ?>
          <input type="hidden" name="total_products" value="<?= $total_products; ?>">
          <input type="hidden" name="total_price" value="<?= $grand_total; ?>" value="">
-         <div class="grand-total">grand total : <span>Rs.<?= $grand_total; ?>/-</span></div>
+         <div class="grand-total">grand total : <span>Rs.<?= $grand_total; ?></span></div>
       </div>
 
       <h3>place your orders</h3>
 
       <div class="flex">
          <div class="inputBox">
-            <span>your name :</span>
-            <input type="text" name="name" placeholder="enter your name" class="box" maxlength="20" required>
+            <span>Full name [First and Last name]</span>
+            <input type="text" name="name" class="box" maxlength="20" required>
          </div>
          <div class="inputBox">
-            <span>your number :</span>
-            <input type="number" name="number" placeholder="enter your number" class="box" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false;" required>
+            <span>Mobile Number</span>
+            <input type="number" name="number"  class="box" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false;" required>
          </div>
          <div class="inputBox">
-            <span>your email :</span>
-            <input type="email" name="email" placeholder="enter your email" class="box" maxlength="50" required>
+            <span>Email</span>
+            <input type="email" name="email"  class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
             <span>payment method :</span>
@@ -120,33 +120,33 @@ if(isset($_POST['order'])){
             </select>
          </div>
          <div class="inputBox">
-            <span>address line 01 :</span>
-            <input type="text" name="flat" placeholder="e.g. flat number" class="box" maxlength="50" required>
+            <span>Flat, House no., Building, Company, Apartment</span>
+            <input type="text" name="flat"  class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
-            <span>address line 02 :</span>
-            <input type="text" name="street" placeholder="e.g. street name" class="box" maxlength="50" required>
+            <span>Area, Street, Sector, Village</span>
+            <input type="text" name="street"  class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
-            <span>city :</span>
-            <input type="text" name="city" placeholder="e.g. mumbai" class="box" maxlength="50" required>
+            <span>City</span>
+            <input type="text" name="city" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
-            <span>state :</span>
-            <input type="text" name="state" placeholder="e.g. maharashtra" class="box" maxlength="50" required>
+            <span>State</span>
+            <input type="text" name="state"class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
-            <span>country :</span>
-            <input type="text" name="country" placeholder="e.g. India" class="box" maxlength="50" required>
+            <span>Landmark</span>
+            <input type="text" name="landmark" placeholder="E.g. near apollo hospital" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
-            <span>pin code :</span>
-            <input type="number" min="0" name="pin_code" placeholder="e.g. 123456" min="0" max="999999" onkeypress="if(this.value.length == 6) return false;" class="box" required>
+            <span>Pincode</span>
+            <input type="number" min="0" name="pin_code"min="0" placeholder="6 digits [0-9] PIN code" max="999999" onkeypress="if(this.value.length == 6) return false;" class="box" required>
          </div>
       </div>
-
+      <div>
       <input type="submit" name="order" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>" value="place order">
-
+      </div>
    </form>
 
 </section>
