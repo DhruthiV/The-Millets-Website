@@ -82,6 +82,8 @@ h1{
    color:var(--white);
    cursor: pointer;
    text-align: center;
+   width: fit-content;
+   align-self: center;
 }
 
 .btn:hover,
@@ -385,12 +387,13 @@ h1{
 }
 
 .home-products .slide .flex .qty{
-   width: 7rem;
-   padding:1rem;
-   border:var(--border);
+   width: fit-content;
+   padding: 1rem;
    font-size: 1.8rem;
-   color:var(--black);
-   border-radius: .5rem;
+   color: var(--black);
+   border-radius: 0.5rem;
+   text-align: center;
+   border: 1px solid grey;
 }
 
 .home-products .slide .flex .price{
@@ -561,6 +564,8 @@ h1{
    border:var(--border);
    padding:2rem;
    overflow: hidden;
+   display: flex;
+   flex-direction: column;
 }
 
 .products .box-container .box img{
@@ -842,17 +847,17 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
    color:var(--red);
 }
 
-.shopping-cart .fa-edit{
+.shopping-cart .fa-pen-clip{
    height: 4.5rem;
    border-radius: .5rem;
-   background-color: var(--orange);
+   background-color: transparent;
    width: 5rem;
    font-size: 2rem;
-   color:var(--white);
+   color:var(--main-color);
    cursor: pointer;
 }
 
-.shopping-cart .fa-edit:hover{
+.shopping-cart .fa-pen-clip:hover{
    background-color: var(--black);
 }
 
