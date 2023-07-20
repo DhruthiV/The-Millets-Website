@@ -14,11 +14,6 @@ inputs.forEach((inp) => {
   });
 });
 
-toggle_btn.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    main.classList.toggle("sign-up-mode");
-  });
-});
 
 function moveSlider() {
   let index = this.dataset.value;
