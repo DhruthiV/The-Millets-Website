@@ -45,7 +45,7 @@ include 'components/wishlist_cart.php';
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/Instant.png"  alt="" class="rounded-borders">
+            <img src="images/Instant.png"  alt="" class="rounded-borders" style="object-fit:cover;">
          </div>
          <div class="content">
             <span>upto 30% off</span>
@@ -57,7 +57,7 @@ include 'components/wishlist_cart.php';
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/SweetBanner.jpg"  alt="" class="rounded-borders">
+            <img src="images/SweetBanner.png"  alt="" class="rounded-borders">
          </div>
          <div class="content">
             <span>healthy Sweets and snacks</span>
@@ -68,7 +68,7 @@ include 'components/wishlist_cart.php';
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/home-img-3.png"  alt="" class="rounded-borders">
+            <img src="images/BF.png"  alt="" class="rounded-borders" >
          </div>
          <div class="content">
             <span>Get upto 50% off on combos</span>
