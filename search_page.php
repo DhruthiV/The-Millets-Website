@@ -29,7 +29,7 @@ include 'components/wishlist_cart.php';
    <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
+<body class="search-body">
    
 <?php include 'components/user_header.php'; ?>
 
