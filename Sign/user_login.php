@@ -154,7 +154,7 @@ if(isset($_POST['submit'])){
                   <label>Password</label>
                 </div>
                 <div class="input-wrap">
-                  <input type="password" name="pass" minlength="4" class="input-field" autocomplete="off" required/>
+                  <input type="password" name="cpass" minlength="4" class="input-field" autocomplete="off" required/>
                   <label>Confirm Password</label>
                 </div>
 
