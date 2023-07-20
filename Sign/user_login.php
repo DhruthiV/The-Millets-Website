@@ -1,3 +1,80 @@
+<?php
+
+include 'components/connect.php';
+
+session_start();
+
+if(isset($_SESSION['user_id'])){
+   $user_id = $_SESSION['user_id'];
+}else{
+   $user_id = '';
+};
+
+if(isset($_POST['submit'])){
+
+   $email = $_POST['email'];
+   $email = filter_var($email, FILTER_SANITIZE_STRING);
+   $pass = sha1($_POST['pass']);
+   $pass = filter_var($pass, FILTER_SANITIZE_STRING);
+
+   $select_user = $conn->prepare("SELECT * FROM `users` WHERE email = ? AND password = ?");
+   $select_user->execute([$email, $pass]);
+   $row = $select_user->fetch(PDO::FETCH_ASSOC);
+
+   if($select_user->rowCount() > 0){
+      $_SESSION['user_id'] = $row['id'];
+      header('location:home.php');
+   }else{
+      $message[] = 'incorrect username or password!';
+   }
+
+}
+
+?>
+<?php
+
+include 'components/connect.php';
+
+session_start();
+
+if(isset($_SESSION['user_id'])){
+   $user_id = $_SESSION['user_id'];
+}else{
+   $user_id = '';
+};
+
+if(isset($_POST['submit'])){
+
+   $name = $_POST['name'];
+   $name = filter_var($name, FILTER_SANITIZE_STRING);
+   $email = $_POST['email'];
+   $email = filter_var($email, FILTER_SANITIZE_STRING);
+   $pass = sha1($_POST['pass']);
+   $pass = filter_var($pass, FILTER_SANITIZE_STRING);
+   $cpass = sha1($_POST['cpass']);
+   $cpass = filter_var($cpass, FILTER_SANITIZE_STRING);
+
+   $select_user = $conn->prepare("SELECT * FROM `users` WHERE email = ?");
+   $select_user->execute([$email,]);
+   $row = $select_user->fetch(PDO::FETCH_ASSOC);
+
+   if($select_user->rowCount() > 0){
+      $message[] = 'email already exists!';
+   }else{
+      if($pass != $cpass){
+         $message[] = 'confirm password not matched!';
+      }else{
+         $insert_user = $conn->prepare("INSERT INTO `users`(name, email, password) VALUES(?,?,?)");
+         $insert_user->execute([$name, $email, $cpass]);
+         $message[] = 'registered successfully, login now please!';
+      }
+   }
+
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,11 +82,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Siri Flavours|Accounts</title>
-    <link rel="stylesheet" href="/css/account.css" />
+    <link rel="stylesheet" href="css/account.css">
     
    
   </head>
   <body>
+    <?php include 'components/user_header.php'; ?>
     <main>
       <div class="box">
         <div class="inner-box">
@@ -34,11 +112,11 @@
                 </div>
 
                 <div class="input-wrap">
-                  <input type="password" name="password" minlength="4" class="input-field" autocomplete="off"  required/>
+                  <input type="password" name="pass" minlength="4" class="input-field" autocomplete="off"  required/>
                   <label>Password</label>
                 </div>
 
-                <input type="submit" value="Sign In" class="sign-btn activebtn" />
+                <input type="submit" value="Sign In" class="sign-btn activebtn" name="submit" />
 
                 <p class="text">
                   Forgotten your password or you login details?
@@ -72,11 +150,15 @@
                 </div>
 
                 <div class="input-wrap">
-                  <input type="password" name="password" minlength="4" class="input-field" autocomplete="off" required/>
+                  <input type="password" name="pass" minlength="4" class="input-field" autocomplete="off" required/>
                   <label>Password</label>
                 </div>
+                <div class="input-wrap">
+                  <input type="password" name="pass" minlength="4" class="input-field" autocomplete="off" required/>
+                  <label>Confirm Password</label>
+                </div>
 
-                <input type="submit" value="Sign Up" class="sign-btn activebtn" />
+                <input type="submit" value="Sign Up" class="sign-btn activebtn" name="submit" />
 
                 <p class="text">
                   By signing up, I agree to the
@@ -113,6 +195,11 @@
         </div>
       </div>
     </main>
+    
+<?php include 'components/footer.php'; ?>
+
+<script src="js/script.js"></script>
+
     <!-- Javascript file -->
     <script src="js/account.js"></script>
   </body>
