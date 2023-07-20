@@ -23,15 +23,13 @@
           <li class="link_name">Services</li>
           <li><a href="./cart.php">Cart</a></li>
           <li><a href="./orders.php">Orders</a></li>
-          <li><a href="#">Gifts & Offer</a></li>
           <li><a href="#">Payment</a></li>
 
         </ul>
         <ul class="f-box">
           <li class="link_name">Account</li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Log in </a></li>
-          <li><a href="#">Log out</a></li></ul>
+          <li><a href="./user_login.php">Sign In </a></li>
+          <li><a href="./user_logout.php">Sign Out</a></li></ul>
         <ul class="f-box">
             <li class="link_name">Follow us</li>
             <li> <a href="#"><i class="fab fa-facebook-f"></i>  facebook</a></li>
@@ -41,7 +39,7 @@
         </ul>
         <ul class="f-box input-box">
           <li class="link_name">Contact us</li>
-          <li class="mob">080-655-244</li>
+          <li class="mob">9481604745</li>
         </ul>
       </div>
     </div>
