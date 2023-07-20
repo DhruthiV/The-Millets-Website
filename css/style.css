@@ -118,9 +118,9 @@ h1{
 }
 
 .message{
-   position: sticky;
-   top:0;
-   max-width: 1200px;
+   position: absolute;
+   top:50%;
+   left: 40%;
    margin:0 auto;
    background-color: var(--light-bg);
    padding:2rem;
