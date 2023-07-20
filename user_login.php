@@ -94,7 +94,7 @@ if(isset($_POST['submit'])){
           <div class="forms-wrap">
             <form action="authenticate.php" method="post" autocomplete="off" class="sign-in-form">
               <div class="logo">
-                <img src="./img/logo.png" alt="easyclass" />
+                <img src="./images/logo.png" alt="easyclass" />
                 <h4>Siri Flavors</h4>
               </div>
 
@@ -127,7 +127,7 @@ if(isset($_POST['submit'])){
 
             <form action="register.php" method="post" autocomplete="off" class="sign-up-form">
               <div class="logo">
-                <img src="./img/logo.png" alt="easyclass" />
+                <img src="./images/logo.png" alt="easyclass" />
                 <h4>Siri Flavors</h4>
               </div>
 
