@@ -49,22 +49,19 @@
             $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
          ?>
          <p><?= $fetch_profile["name"]; ?></p>
-         <a href="update_user.php" class="btn">update profile</a>
+         <a href="update_user.php" class="btn">Update Your Profile</a>
          <div class="flex-btn">
-            <a href="user_register.php" class="option-btn">register</a>
-            <a href="user_login.php" class="option-btn">login</a>
+             <a href="user_login.php" class="option-btn">Sign In | Sign Up</a>
          </div>
-         <a href="components/user_logout.php" class="delete-btn" onclick="return confirm('logout from the website?');">logout</a> 
+         <a href="components/user_logout.php" class="delete-btn" onclick="return confirm('logout from the website?');">Sign Out</a> 
          <?php
             }else{
          ?>
         <div class="flex-btn">
          <div>
             <img src="images\sweet.jpg" alt="">
-            <p>Did you Sign Up with Us?</p>
-            <a href="user_register.php" class="option-btn sign">Sign Up</a>
-            <p>Already have an Account?</p>
-            <a  href="user_login.php" class="option-btn sign">Sign In</a>
+            <p style="font-size:2rem;">Greetings from Siri Flavors</p>
+            <a  href="user_login.php" class="option-btn sign">Sign In | Sign Up</a>
             
 
         </div>
