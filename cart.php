@@ -92,12 +92,16 @@ if(isset($_POST['update_qty'])){
    </div>
 
    <div class="cart-total">
-      <p>Discount 10% : <span>Rs.<?= $discount; ?>/-</span></p>
-      <p>GST 5% : <span>Rs.<?= $gst; ?>/-</span></p>
-      <p>Grand Total : <span>Rs.<?= $grand_total; ?>/-</span></p>
+      <p>Discount 10% : <span>Rs.<?= $discount; ?></span></p>
+      CGST 2.5% + SCGST 2.5%<br>
+      <p>  GST 5% : <span>Rs.<?= $gst; ?></span></p>
+      <p>Grand Total : <span>Rs.<?= $grand_total; ?></span></p>
+      <div>
       <a href="shop.php" class="option-btn">Shop More</a>
-      <a href="cart.php?delete_all" class="delete-btn <?= ($grand_total > 1)?'':'disabled'; ?>" onclick="return confirm('delete all from cart?');">Remove all items</a>
       <a href="checkout.php" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>">Proceed to checkout</a>
+      </div>
+      <a href="cart.php?delete_all" class="delete-btn <?= ($grand_total > 1)?'':'disabled'; ?>" onclick="return confirm('delete all from cart?');"
+       style="width: max-content;  font-size: 1.2rem;    padding: 0.5rem;   align-self: flex-start;">Remove all items</a>
    </div>
 
 </section>
