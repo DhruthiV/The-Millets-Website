@@ -2,8 +2,8 @@
 
 :root{
    --main-color:#001C30;
-   --orange:#176B87;
-   --red:#64CCC5;
+   --teal:#176B87;
+   --turquoise:#64CCC5;
    --black:#333;
    --white:#fff;
    --light-color:#666;
@@ -89,7 +89,7 @@ h1{
 .btn:hover,
 .delete-btn:hover,
 .option-btn:hover{
-   background-color: var(--red);
+   background-color: var(--turquoise);
 }
 
 .btn{
@@ -97,11 +97,11 @@ h1{
 }
 
 .option-btn{
-   background-color: var(--orange);
+   background-color: var(--teal);
 }
 
 .delete-btn{
-   background-color: var(--red);
+   background-color: var(--turquoise);
 }
 
 .flex-btn{
@@ -138,7 +138,7 @@ h1{
 
 .message i{
    cursor: pointer;
-   color:var(--red);
+   color:var(--turquoise);
    font-size: 2.5rem;
 }
 
@@ -152,7 +152,7 @@ h1{
    border: var(--border);
    box-shadow: var(--box-shadow);
    text-align: center;
-   color:var(--red);
+   color:var(--turquoise);
    border-radius: .5rem;
    font-size: 2rem;
    text-transform: capitalize;
@@ -215,14 +215,14 @@ h1{
 }
 
 .header .flex .icons > *:hover{
-   color:var(--red);
+   color:var(--turquoise);
 }
 
 .header .flex .icons a span{
    font-size: 2rem;
-   border: 1px solid var(--orange);
+   border: 1px solid var(--teal);
    border-radius: 5rem;
-   background:var(--orange);
+   background:var(--teal);
    position: relative;
    top: -1.5rem;
    padding: 0.2rem;
@@ -402,7 +402,7 @@ h1{
 .home-products .slide .flex .price{
    margin:1rem 0;
    font-size: 2rem;
-   color:var(--red);
+   color:var(--turquoise);
 }
 
 .home-products .slide .fa-heart,
@@ -539,7 +539,7 @@ h1{
 
 .quick-view form .row .flex .price{
    font-size: 2rem;
-   color:var(--red);
+   color:var(--turquoise);
 }
 
 .quick-view form .row .content .details{
@@ -643,7 +643,7 @@ h1{
 
 .products .box-container .box .flex .price{
    font-size: 2rem;
-   color:var(--red);
+   color:var(--turquoise);
    margin-right: auto;
 }
 
@@ -754,7 +754,7 @@ h1{
 .reviews .slide .stars i{
    margin:0 .3rem;
    font-size: 1.7rem;
-   color:var(--orange);
+   color:var(--teal);
 }
 
 .reviews .slide h3{
@@ -857,7 +857,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .wishlist-total p span{
-   color:var(--red);
+   color:var(--turquoise);
 }
 
 .shopping-cart .fa-pen-clip{
@@ -881,7 +881,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .shopping-cart .sub-total span{
-   color:var(--red);
+   color:var(--turquoise);
 }
 
 .cart-total{
@@ -907,7 +907,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .cart-total p span{
-   color:var(--red);
+   color:var(--turquoise);
 }
 
 .display-orders{
@@ -928,7 +928,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .display-orders p span{
-   color:var(--red);
+   color:var(--turquoise);
 }
 .display-orders div{
    align-self: center;
@@ -942,7 +942,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .display-orders .grand-total span{
-   color:var(--red);
+   color:var(--turquoise);
 }
 
 .checkout-body{
@@ -1076,7 +1076,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox=
    padding-right: 2rem;
 }
 
-.footer .credit{
+.footer .cturquoiseit{
    text-align: center;
    padding: 2.5rem 2rem;
    border-top: var(--border);
@@ -1084,7 +1084,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox=
    color:var(--black);
 }
 
-.footer .credit span{
+.footer .cturquoiseit span{
    color:var(--main-color);
 }
 
@@ -1364,7 +1364,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox=
 
 /*header*/
 .navbar a:hover{
-color:var(--red);
+color:var(--turquoise);
 }
 
 .header-brandname-div{
