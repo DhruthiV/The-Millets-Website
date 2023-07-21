@@ -48,7 +48,7 @@
             if($select_profile->rowCount() > 0){
             $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
          ?>
-         <p><?= $fetch_profile["name"]; ?></p>
+         <p>Hi! <?= $fetch_profile["name"]; ?></p>
          <a href="update_user.php" class="btn">Update Your Profile</a>
          <div class="flex-btn">
              <a href="user_login.php" class="option-btn">Sign In | Sign Up</a>
