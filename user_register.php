@@ -38,7 +38,7 @@ if(isset($_POST['submit'])){
          $insert_user->execute([$name, $email, $cpass]);
          echo'<script> alert("You have successfully Signed up with us, Sign in to continue!");
       window.location.href="User_login.php"; </script>';
-         echo;
+        
       }
    }
 
