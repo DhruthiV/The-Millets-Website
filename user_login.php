@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
    $pass = sha1($_POST['pass']);
    $pass = filter_var($pass, FILTER_SANITIZE_STRING);
 
-   $select_user = $conn->prepare("SELECT * FROM `users` WHERE email = ? AND password = ?");
+   $select_user = $conn->prepare( "SELECT * FROM `users` WHERE email = ? AND password = ?");
    $select_user->execute([$email, $pass]);
    $row = $select_user->fetch(PDO::FETCH_ASSOC);
 
@@ -55,8 +55,8 @@ if(isset($_POST['submit'])){
 
 
               <div class="logo">
-                <img src="./images/logo-only.png" alt="easyclass" />
-                <h4>Siri Flavors</h4>
+                <img src="./images/logo-only.png" alt="Siri Flavors" />
+               
               </div>
 
               <div class="heading">
@@ -80,8 +80,7 @@ if(isset($_POST['submit'])){
                 <input type="submit" value="Sign In" class="sign-btn activebtn" name="submit" />
 
                 <p class="text">
-                  Forgotten your password or you login details?
-                  <a href="#">Get help</a> signing in
+                  Welcome once again to Siri Flavors!
                 </p>
               </div>
            </form>
@@ -95,9 +94,9 @@ if(isset($_POST['submit'])){
             <div class="text-slider">
               <div class="text-wrap">
                 <div class="text-group">
+                <h2>Get Millets from Local Farmers</h2>
                   <h2>Make Instant Millet Recipes</h2>
                   <h2>Find your way to Better Living</h2>
-                  <h2>Help Local Farmers</h2>
                 </div>
               </div>
 

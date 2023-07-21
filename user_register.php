@@ -38,7 +38,7 @@ if(isset($_POST['submit'])){
          $insert_user->execute([$name, $email, $cpass]);
          echo'<script> alert("You have successfully Signed up with us, Sign in to continue!");
       window.location.href="User_login.php"; </script>';
-         echo;
+         
       }
    }
 
@@ -71,8 +71,7 @@ if(isset($_POST['submit'])){
             
           <form action="" method="post" autocomplete="off" class="sign-up-form">
               <div class="logo">
-                <img src="./images/logo-only.png" alt="easyclass" />
-                <h4>Siri Flavors</h4>
+                <img src="./images/logo-only.png" alt="Siri Flavors" />
               </div>
 
               <div class="heading">
@@ -105,9 +104,7 @@ if(isset($_POST['submit'])){
                 <input type="submit" value="Sign Up" class="sign-btn activebtn" name="submit" />
 
                 <p class="text">
-                  By signing up, I agree to the
-                  <a href="#">Terms of Services</a> and
-                  <a href="#">Privacy Policy</a>
+                  By signing up, you join our community and help not just yourself but many people out there!
                 </p>
             </div>
           
@@ -122,10 +119,10 @@ if(isset($_POST['submit'])){
 
             <div class="text-slider">
               <div class="text-wrap">
-                <div class="text-group">
+              
+                  <h2>Get Millets from Local Farmers</h2>
                   <h2>Make Instant Millet Recipes</h2>
                   <h2>Find your way to Better Living</h2>
-                  <h2>Help Local Farmers</h2>
                 </div>
               </div>
 
