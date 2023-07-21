@@ -50,7 +50,6 @@ include 'components/wishlist_cart.php';
          <div class="content">
             <span>upto 30% off</span>
             <h3>Buy our Instant Recipes</h3>
-           <h4>5 mins Breakfast Recipes </h4>
             <a href="shop.php" class="btn">shop now</a>
          </div>
       </div>
