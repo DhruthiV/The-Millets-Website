@@ -85,10 +85,11 @@ form {
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .logo img {
-  width: 3rem;
+  width: 7rem;
   margin-right: 0.3rem;
   border-radius: 18rem;
 }
