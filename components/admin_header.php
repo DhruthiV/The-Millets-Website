@@ -15,15 +15,15 @@
 
    <section class="flex">
 
-      <a href="../admin/dashboard.php" class="logo">Admin<span>Panel</span></a>
+      <a href="../admin/dashboard.php" class="logo"><span>Admin Panel</span></a>
 
       <nav class="navbar">
-         <a href="../admin/dashboard.php">home</a>
-         <a href="../admin/products.php">products</a>
-         <a href="../admin/placed_orders.php">orders</a>
-         <a href="../admin/admin_accounts.php">admins</a>
-         <a href="../admin/users_accounts.php">users</a>
-         <a href="../admin/messages.php">messages</a>
+         <a href="../admin/dashboard.php">Dashboard</a>
+         <a href="../admin/products.php">Our Products</a>
+         <a href="../admin/placed_orders.php">Orders List</a>
+         <a href="../admin/admin_accounts.php">Admins</a>
+         <a href="../admin/users_accounts.php">Our Customers</a>
+         <a href="../admin/messages.php">Messages</a>
       </nav>
 
       <div class="icons">
