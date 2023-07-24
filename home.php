@@ -50,7 +50,6 @@ include 'components/wishlist_cart.php';
          <div class="content">
             <span>upto 30% off</span>
             <h3>Buy our Instant Recipes</h3>
-           <h4>5 mins Breakfast Recipes </h4>
             <a href="shop.php" class="btn">shop now</a>
          </div>
       </div>
@@ -114,7 +113,7 @@ include 'components/wishlist_cart.php';
    </a></div> 
 
    <div> <a href="category.php?category=combos"  >
-      <img src="images/raw.jpg"  alt="" class="rounded-borders">
+      <img src="images/combo.jpg"  alt="" class="rounded-borders">
       <h3>Combo Packs</h3>
    </a></div> 
 

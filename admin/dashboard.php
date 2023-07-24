@@ -25,7 +25,7 @@ if(!isset($admin_id)){
    <link rel="stylesheet" href="../css/admin_style.css">
 
 </head>
-<body style="background-color:#A7EDE7">
+<body >
 
 <?php include '../components/admin_header.php'; ?>
 
