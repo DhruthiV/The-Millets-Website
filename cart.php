@@ -60,6 +60,9 @@ if(isset($_POST['update_qty'])){
    <div class="box-container">
 
    <?php
+   $discount=0;
+   $gst=0;
+   $grand_total=0;
       $total = 0;
       $select_cart = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
       $select_cart->execute([$user_id]);

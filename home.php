@@ -113,7 +113,7 @@ include 'components/wishlist_cart.php';
    </a></div> 
 
    <div> <a href="category.php?category=combos"  >
-      <img src="images/raw.jpg"  alt="" class="rounded-borders">
+      <img src="images/combo.jpg"  alt="" class="rounded-borders">
       <h3>Combo Packs</h3>
    </a></div> 
 
