@@ -83,7 +83,7 @@ if(isset($_POST['submit'])){
               <div class="actual-form">
                 <div class="input-wrap">
                   <input
-                    type="text" name="name" minlength="4" class="input-field" autocomplete="off" required/>
+                    type="text" name="name" minlength="4" class="input-field" autocomplete="off" maxlength="32"  pattern="[A-Za-z]{1,32}" title="no numbers are allowed" required/>
                   <label>Name</label>
                 </div>
 
@@ -93,7 +93,7 @@ if(isset($_POST['submit'])){
                 </div>
 
                 <div class="input-wrap">
-                  <input type="password" name="pass" minlength="4" class="input-field" autocomplete="off" required/>
+                  <input type="password" name="pass" minlength="4" class="input-field" autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
                   <label>Password</label>
                 </div>
                 <div class="input-wrap">
