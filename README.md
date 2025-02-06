@@ -29,7 +29,6 @@ This website features a user-friendly interface with real-time inventory managem
 
 ### **Frontend**
 - 🌐 HTML5, CSS3, JavaScript (ES13)
-- 🎨 Bootstrap for UI styling
 
 ### **Backend**
 - 🐘 PHP (Version 8.2)
