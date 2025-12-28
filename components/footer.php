@@ -39,7 +39,7 @@
         </ul>
         <ul class="f-box input-box">
           <li class="link_name">Contact us</li>
-          <li class="mob">9481604745</li>
+          <li class="mob">9XXXXXXXX5</li>
         </ul>
       </div>
     </div>
